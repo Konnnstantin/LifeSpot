@@ -4,7 +4,7 @@
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    gap: 5px;
+    gap: 10px;
 }
 iframe{
     width:100%;
@@ -76,4 +76,16 @@ body {
 header, footer, body, .video-container {
     background-color: lightblue;
     font-family: 'Bernard MT';
+}
+.review-container, .review-button {
+    display: inline-block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
+}
+.review-text {
+    display: block;
+    margin-top: 0.5em;
+    padding-left: 1%;
+    padding-top: 1%;
 }

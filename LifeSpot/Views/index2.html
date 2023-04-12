@@ -4,39 +4,46 @@
     <meta charset="UTF-8">
     <title>LifeSpot</title>
     <link href="../Static/CSS/Index.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript"  src="../Static/JS/Index.js"></script>
+    <script>checkAge();
+
+        handleSession();
+
+        sessionLog();
+
+        subscription();
+
+        const inputParseFunction = function () {
+            return document.getElementsByTagName('input')[0].value.toLowerCase();
+        }
+    </script>
 </head>
-<body>
+
     <header id="header-index">
         <h1>LifeSpot - прямые трансляции с улиц</h1>
         <div class="example">
             <p>Покажем, что происходит прямо сейчас.</p>
             <span>Поиск видео </span>
-            <input type="text" size="50">
+            <script>const userInput = function () { return document.getElementsByTagName('input')[0].value.toLowerCase() }</script>
+            <input type="text" oninput="filterContent()" size=50%>
         </div>
     </header>
-    <aside id="sidebar">
-        <div class="navbar">
-            <a href="/"><p>Все трансляции</p></a>
-            <a href="/"><p>О проекте</p></a>
+<!--SIDEBAR-->
+    <body>
+        <div class="border">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/srlpC5tmhYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3 class="video-title">Нью-Йорк, Брайант Парк</h3>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/wCcMcaiRbhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3 class="video-title">Санкт-Петербург, Невский Проспект</h3>
+            </div>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/JplMzss6_YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h3 class="video-title">Лондон, автобусный маршрут</h3>
+            </div>
         </div>
-    </aside>
-  <div class="border">
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/srlpC5tmhYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h3 class="video-title">Нью-Йорк, Брайант Парк</h3>
-        </div>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/wCcMcaiRbhM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h3 class="video-title">Санкт-Петербург, Невский Проспект</h3>
-        </div>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/JplMzss6_YE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <h3 class="video-title">Лондон, автобусный маршрут</h3>
-        </div>
-    </div>
-    <footer>
-        <p>LifeSpot - все права защищены</p>
-        <p>Связаться с нами: contact@lifespot.ru</p>
-    </footer>
-</body>
+        <!--FOOTER-->
+    </body>
 </html>
